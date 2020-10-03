@@ -13,10 +13,10 @@ if (number < 50):
 
 target = input("What was your target grade?")
 
-while (mark_grade == "A"):
+while (mark_grade == ("A")):
   print("Well done you met your target")
-if mark_grade <= B :
+if (mark_grade <= ("B")) :
   print ("Your grade was less than your target - please rebook your retest")
-elif mark_grade >= A:
+elif (mark_grade >= ("A")):
   print("Well done you went above and beyond!")
 
