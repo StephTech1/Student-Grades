@@ -1,9 +1,7 @@
-#Write a program to ask a student their percentage mark and convert this to a grade - Conversion will be in a function called mark_grade
-# ask the user for their target grade and print this with their mark
 print("Grades")
 
-target = ("A,B")
-
+target = ("A or B")
+grade = ("A or B")
 number = int(input("What percentage did you get?"))
 
 if (number > 50):
@@ -13,13 +11,13 @@ if (number < 50):
 
 target = input("What was your target grade?")
 
-while (target == ("A")):
+while (target == grade):
   print("Well done you met your target")
-  break
-if (target < ("B")):
+  
+if (target <= grade):
   print("Your grade was less than your target - please rebook your retest")
   
-if (target > ("A")):
+if (target >= grade):
   print("Well done you went above and beyond!")
   
 
