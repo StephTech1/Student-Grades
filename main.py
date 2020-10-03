@@ -3,6 +3,7 @@
 print("Grades")
 
 mark_grade = ("A,B")
+target = ("A,B")
 
 number = int(input("What percentage did you get?"))
 
@@ -13,10 +14,12 @@ if (number < 50):
 
 target = input("What was your target grade?")
 
-while (mark_grade == ("A")):
+while (target == ("A")):
   print("Well done you met your target")
-if (mark_grade <= ("B")) :
+  break
+while (target < ("B")):
   print ("Your grade was less than your target - please rebook your retest")
-elif (mark_grade >= ("A")):
+  break
+while (target > ("A")):
   print("Well done you went above and beyond!")
 
